@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="./Img/Vectoralura.png" alt="logo alura" />
+    </header>
+
+    <main class="main">
+      <section class="main__section">
+        <h1 class="main__header">Encriptador de mesajes</h1>
+        <fomr class="form">
+          <textarea
+            id="input"
+            placeholder="Escribe tu mensaje"
+            rows="20"
+            cols="40"
+            required
+          ></textarea>
+
+          <div class="form__div">
+            <svg
+              class="form__svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-exclamation-octagon-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+            <p class="form__p">solo letras minusculas y sin acento</p>
+          </div>
+
+          <div class="div-btn">
+            <button id="encriptar" class="btn" type="submit">Encriptar</button>
+            <button id="desencriptar" class="btn btn-secondary" type="button">
+              Desencriptar
+            </button>
+
+          </div>
+
+
+        </fomr>
+      </section>
+
+      <section class="section">
+        <img class="section__img" src="./Img/Muñecomuñeco.png" alt="muñeco-imagen">
+        <h2 class="section__header">Ningun texto fue encontrado</h2>
+        <p id="texto"class="section__p">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+        <button id="btnCopiar" class="btn btn-secondary btn-copiar">Copiar</button>
+      </section>
+    </main>
+
+    <footer>
+      <p class="copyright">
+        &copy Projecto hecho por Julio Ferrer con ayuda de Alura Latam
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
